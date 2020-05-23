@@ -14,7 +14,7 @@ interface IRequest {
 @injectable()
 class UpdateUserAvatarService {
   constructor(
-    @inject('StorageRepository')
+    @inject('StorageProvider')
     private storageProvider: IStorageProvider,
 
     @inject('UsersRepository')
